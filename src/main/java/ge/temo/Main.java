@@ -16,7 +16,7 @@ public class Main {
             System.out.println("Enter a value between 1,000 and 1,000,000");
         }
 
-        float monthlyInterest = 0;
+        float monthlyInterest;
         while (true) {
             System.out.print("Annual Interest Rate: ");
             float annualInterest = scanner.nextFloat();
@@ -28,7 +28,7 @@ public class Main {
 
         }
 
-        int numOfPayments = 0;
+        int numOfPayments;
         while (true) {
             System.out.print("Period: ");
             byte years = scanner.nextByte();
