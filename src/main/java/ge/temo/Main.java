@@ -16,10 +16,17 @@ public class Main {
             System.out.println("Enter a value between 1,000 and 1,000,000");
         }
 
+        float monthlyInterest = 0;
+        while (true) {
+            System.out.print("Annual Interest Rate: ");
+            float annualInterest = scanner.nextFloat();
+            if (annualInterest > 0 && annualInterest <= 30) {
+                break;
+            }
+            System.out.println("Enter a value between 1 and 30");
+            monthlyInterest = annualInterest / 100 / 12;
+        }
 
-        System.out.print("Annual Interest Rate: ");
-        float annualInterest = scanner.nextFloat();
-        float monthlyInterest = annualInterest / 100 / 12;
 
         System.out.print("Period: ");
         byte years = scanner.nextByte();
